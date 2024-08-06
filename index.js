@@ -18,6 +18,7 @@ function removeLastElement() {
     array.pop();
 }
 
+// Step 6: Implement a function to remove the first element from the array
 function removeFirstElement() {
     array.shift();
 }
