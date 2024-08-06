@@ -1,4 +1,5 @@
 // Step 1: Get references to the input field, button, and item list
+const itemInput = document.getElementById('itemInput');
 
 
 
