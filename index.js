@@ -35,8 +35,13 @@ function removeElement(index) {
 
 // Step 9: Write a function that iterates through the array to display each element in the designated HTML area
 function displayArray() {
-    itemList.innerHTML = "";
-    array.forEach()
+    itemList.innerHTML = ""; // Clear the list
+    array.forEach((element, index) => {
+        const listItem = document.createElement('li'); // Create a new list item
+        listItem.textContent = `Element ${index + 1}: ${element}`; // Set the text content to the element value
+        itemList.appendChild(listItem);  // Append the list item to the item list
+
+    })
 
 }
 
