@@ -23,5 +23,19 @@ function removeFirstElement() {
     array.shift();
 }
 
+// Step 7: Implement a function to add an element to the beginning of the array
+function addFirstElement() {
+    array.unshift(element);
+}
 
+// Step 8: Create a function removeElement(index) that removes an element at a specific index
+function removeElement(index) {
+    array.splice(index, 1);
+}
+
+// Step 9: Write a function that iterates through the array to display each element in the designated HTML area
+function displayArray() {
+    document.itemList.innerHTML = "";
+    array.forEach()
+}
 
