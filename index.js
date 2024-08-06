@@ -35,7 +35,8 @@ function removeElement(index) {
 
 // Step 9: Write a function that iterates through the array to display each element in the designated HTML area
 function displayArray() {
-    document.itemList.innerHTML = "";
+    itemList.innerHTML = "";
     array.forEach()
+
 }
 
