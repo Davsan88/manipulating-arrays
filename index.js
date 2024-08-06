@@ -13,4 +13,14 @@ function addElement() {
     array.push(elementInput);
 } 
 
+// Step 5: Implement a function to remove the last element from the array
+function removeLastElement() {
+    array.pop();
+}
+
+function removeFirstElement() {
+    array.shift();
+}
+
+
 
