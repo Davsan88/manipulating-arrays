@@ -10,9 +10,11 @@ let array = []; // This array will store elements to be manipulated
 // Step 4: Retrieve an element from an input field and add it to the end of the array
 function addElement() {
     const elementInput = itemInput.value.trim();
-    array.push(elementInput);
-    itemInput.value = ''; // Clear the input field
-    displayArray();
+    if (elementInput !== "") {
+        array.push(elementInput);
+        displayArray(); // Update the display after adding the element
+        itemInput.value = ""; // Clear the input field
+    } else   
 } 
 
 // Step 5: Implement a function to remove the last element from the array
