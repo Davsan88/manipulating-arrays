@@ -65,10 +65,10 @@ function displayArray() {
 
 // Adding event listeners for the buttons
 itemButton.addEventListener('click', addElement);
-document.getElementById('removeLastButton').addEventListerner('click', removeLastElement);
-document.getElementById('removeFirstButton').addEventListerner('click', removeFirstElement);
-document.getElementById('addFirstButton').addEventListerner('click', addFirstElement);
-document.getElementById('removeIndexButton').addEventListerner('click', () => {
+document.getElementById('removeLastButton').addEventListener('click', removeLastElement);
+document.getElementById('removeFirstButton').addEventListener('click', removeFirstElement);
+document.getElementById('addFirstButton').addEventListener('click', addFirstElement);
+document.getElementById('removeIndexButton').addEventListener('click', () => {
     const index = parseInt(document.getElementById('indexInput').value);
     removeElement(index);
 });
