@@ -67,3 +67,4 @@ function displayArray() {
 itemButton.addEventListener('click', addElement);
 document.getElementById('removeLastButton').addEventListerner('click', removeLastElement);
 document.getElementById('removeFirstButton').addEventListerner('click', removeFirstElement);
+document.getElementById('addFirstButton').addEventListerner('click', addFirstElement);
