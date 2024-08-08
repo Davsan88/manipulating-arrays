@@ -66,3 +66,4 @@ function displayArray() {
 // Adding event listeners for the buttons
 itemButton.addEventListener('click', addElement);
 document.getElementById('removeLastButton').addEventListerner('click', removeLastElement);
+document.getElementById('removeFirstButton').addEventListerner('click', removeFirstElement);
