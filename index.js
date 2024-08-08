@@ -14,7 +14,9 @@ function addElement() {
         array.push(elementInput);
         displayArray(); // Update the display after adding the element
         itemInput.value = ""; // Clear the input field
-    } else   
+    } else {
+        alert("Please enter a valid item.");
+    }  
 } 
 
 // Step 5: Implement a function to remove the last element from the array
