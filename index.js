@@ -22,25 +22,25 @@ function addElement() {
 // Step 5: Implement a function to remove the last element from the array
 function removeLastElement() {
     array.pop();
-    displayArray();
+    displayArray(); // Update the display after adding the element
 }
 
 // Step 6: Implement a function to remove the first element from the array
 function removeFirstElement() {
     array.shift();
-    displayArray();
+    displayArray(); // Update the display after adding the element
 }
 
 // Step 7: Implement a function to add an element to the beginning of the array
 function addFirstElement() {
     array.unshift(element);
-    displayArray();
+    displayArray(); // Update the display after adding the element
 }
 
 // Step 8: Create a function removeElement(index) that removes an element at a specific index
 function removeElement(index) {
     array.splice(index, 1);
-    displayArray();
+    displayArray(); // Update the display after adding the element
 }
 
 // Step 9: Write a function that iterates through the array to display each element in the designated HTML area
