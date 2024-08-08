@@ -41,13 +41,16 @@ function addFirstElement() {
     } else {
         alert("Please enter a valid item.")
     }
-
 }
 
 // Step 8: Create a function removeElement(index) that removes an element at a specific index
 function removeElement(index) {
-    array.splice(index, 1);
-    displayArray(); // Update the display after adding the element
+    if (index >= 0 && index < array.length) {
+        array.splice(index, 1);
+        displayArray(); // Update the display after adding the element
+    } else {
+        alert("Please enter a valid index.");
+    }
 }
 
 // Step 9: Write a function that iterates through the array to display each element in the designated HTML area
@@ -60,4 +63,5 @@ function displayArray() {
     })
 }
 
+// Adding event listeners for the buttons
 itemButton.addEventListener('click', addElement);
