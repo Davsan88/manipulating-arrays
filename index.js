@@ -11,6 +11,7 @@ let array = []; // This array will store elements to be manipulated
 function addElement() {
     const elementInput = itemInput.value.trim();
     array.push(elementInput);
+    itemInput.value = ''; // Clear the input field
     displayArray();
 } 
 
@@ -48,3 +49,4 @@ function displayArray() {
     })
 }
 
+itemButton.addEventListener('click', addElement);
