@@ -33,8 +33,15 @@ function removeFirstElement() {
 
 // Step 7: Implement a function to add an element to the beginning of the array
 function addFirstElement() {
-    array.unshift(element);
-    displayArray(); // Update the display after adding the element
+    const elementInput = itemInput.value.trim();
+    if (elementInput !== "") {
+        array.unshift(element);
+        displayArray(); // Update the display after adding the element
+        itemInput.value = ""; // Clear the input field
+    } else {
+        alert("Please enter a valid item.")
+    }
+
 }
 
 // Step 8: Create a function removeElement(index) that removes an element at a specific index
