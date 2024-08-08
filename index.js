@@ -35,7 +35,7 @@ function removeFirstElement() {
 function addFirstElement() {
     const elementInput = itemInput.value.trim();
     if (elementInput !== "") {
-        array.unshift(element);
+        array.unshift(elementInput);
         displayArray(); // Update the display after adding the element
         itemInput.value = ""; // Clear the input field
     } else {
